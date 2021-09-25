@@ -1,0 +1,32 @@
+body{
+    background-color: #131313;
+    color: yellow;
+    margin: 0px;
+}
+label{
+    white-space: nowrap;
+}
+header{
+    justify-content: center;
+    text-align: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.book-card{
+    border: 3px dashed yellow;
+    padding: 10px;
+}
+
+#book-grid{
+    display: grid;
+    margin-left: 10%;
+    margin-right: 10%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}

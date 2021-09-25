@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library</title>
+    <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
     <header>
@@ -12,23 +13,28 @@
     </header>
     <main>
         <div id="register">
-            <label for="title">Book</label>
-            <input type="text" name="title" placeholder="The Hitchiker's Guide to Galaxy" id="title">
-            <label for="author">Author</label>
-            <input type="text" name="author" placeholder="Douglas Adams" id="author">
-            <label for="pages">Pages</label>
-            <input type="number" name="pages" placeholder="208" id="pages">
+            <label for="title">Book
+                <input type="text" name="title" placeholder="The Hitchiker's Guide to Galaxy" id="title">
+            </label>
+            <label for="author">Author
+                <input type="text" name="author" placeholder="Douglas Adams" id="author">
+            </label>
+            <label for="pages">Pages
+                <input type="number" name="pages" placeholder="208" id="pages">
+            </label>
             <button>Add book</button>
         </div>
         <div>
             <h1>Books</h1>
-            <div class="book-card">
-                <h3>Book Title</h3>
-                <h4>Author</h4>
-                <div>
-                    <p>777 pages</p>
-                    <label for="read">Read</label>
-                    <input name="read" type="checkbox" checked>
+            <div id="book-grid">
+                <div class="book-card">
+                    <h3>Book Title</h3>
+                    <h4>Author</h4>
+                    <div>
+                        <p>777 pages</p>
+                        <label for="read">Read</label>
+                        <input name="read" type="checkbox" checked>
+                    </div>
                 </div>
             </div>
         </div>
