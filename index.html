@@ -12,7 +12,7 @@
         <h1>Library</h1>
     </header>
     <main>
-        <div id="register">
+        <form id="register">
             <label for="title">Book
                 <input type="text" name="title" placeholder="The Hitchiker's Guide to Galaxy" id="title">
             </label>
@@ -22,8 +22,11 @@
             <label for="pages">Pages
                 <input min="0" type="number" name="pages" placeholder="208" id="pages">
             </label>
-            <button>Add book</button>
-        </div>
+            <label for="read">Read 
+                <input type="checkbox" name="read" id="hasread">
+            </label>
+            <button id="add-button" type="reset">ADD</button>
+        </form>
         <div>
             <h1>Books</h1>
             <div id="book-grid">

@@ -8,6 +8,20 @@ html{
     scrollbar-width: none;  /* Firefox */
     scroll-behavior: smooth;
 }
+#add-button{
+    background-color: yellow;
+    color: #232323;
+    border: 0px;
+    border-radius: 3px;
+    padding: 10px;
+}
+#add-button:hover{
+    cursor: pointer;
+    background-color: rgb(224, 202, 1);
+}
+#add-button:active{
+    background-color: orange;
+}
 body{
     background-color: #131313;
     color: yellow;
@@ -42,6 +56,28 @@ main{
     display: grid;
     margin-left: 10%;
     margin-right: 10%;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
+}
+
+@media(max-width: 400px){
+    #register{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+    }
+    #add-button{
+        width: 90%;
+    }
+    #book-grid{
+        grid-template-columns: 1fr;
+    }
+    .book-card{
+        height: 230px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
