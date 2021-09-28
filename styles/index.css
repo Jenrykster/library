@@ -8,18 +8,21 @@ html{
     scrollbar-width: none;  /* Firefox */
     scroll-behavior: smooth;
 }
-#add-button{
+button{
     background-color: yellow;
     color: #232323;
     border: 0px;
     border-radius: 3px;
+    margin-top: 10px;
+}
+#add-button{
     padding: 10px;
 }
-#add-button:hover{
+button:hover{
     cursor: pointer;
     background-color: rgb(224, 202, 1);
 }
-#add-button:active{
+button:active{
     background-color: orange;
 }
 body{
