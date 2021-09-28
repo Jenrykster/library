@@ -35,6 +35,7 @@ function updateLib(){
         }
         bookGrid.appendChild(newBookCard);
     }
+    localStorage.setItem('myLib',JSON.stringify(myLibrary));
 }
 function changeStatus(e){
     let cardIndex = e.parentNode.parentNode.dataset.index;
@@ -52,7 +53,7 @@ function removeCard(e){
     myLibrary.splice(index,1);
     updateLib();
 }
-addBook('1984', 'George Orwell', 200, true);
-addBook('PunPun', 'Inio Asano', 200, true);
-addBook('Calculus', 'Diva', 200, false);
-window.onload = updateLib;
+window.onload = function(){
+    myLibrary = JSON.parse(localStorage.getItem('myLib') || []);
+    updateLib();
+}
