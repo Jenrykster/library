@@ -12,20 +12,20 @@
         <h1>Library</h1>
     </header>
     <main>
-        <form id="register">
+        <form id="register" onsubmit="return false">
             <label for="title">Book
-                <input type="text" name="title" placeholder="The Hitchiker's Guide to Galaxy" id="title">
+                <input type="text" name="title" placeholder="The Hitchiker's Guide to Galaxy" id="title" required>
             </label>
             <label for="author">Author
-                <input type="text" name="author" placeholder="Douglas Adams" id="author">
+                <input type="text" name="author" placeholder="Douglas Adams" id="author" required>
             </label>
             <label for="pages">Pages
-                <input min="0" type="number" name="pages" placeholder="208" id="pages">
+                <input min="0" type="number" name="pages" placeholder="208" id="pages" required>
             </label>
             <label for="read">Read 
                 <input type="checkbox" name="read" id="hasread">
             </label>
-            <button id="add-button" type="reset">ADD</button>
+            <button id="add-button">ADD</button>
         </form>
         <div>
             <h1>Books</h1>
